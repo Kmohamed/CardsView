@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CircleTableView.h"
+#import "circleCard.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<CircleTableDelegate>
 
 
 @end

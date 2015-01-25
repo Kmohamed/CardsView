@@ -14,6 +14,11 @@
 		E160E9731A74DF2500655539 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E160E9721A74DF2500655539 /* Images.xcassets */; };
 		E160E9761A74DF2500655539 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E160E9741A74DF2500655539 /* LaunchScreen.xib */; };
 		E160E9821A74DF2600655539 /* CardsViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E160E9811A74DF2600655539 /* CardsViewTests.m */; };
+		E160E9921A74DF9E00655539 /* CardData.m in Sources */ = {isa = PBXBuildFile; fileRef = E160E98D1A74DF9E00655539 /* CardData.m */; };
+		E160E9931A74DF9E00655539 /* circleCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E160E98F1A74DF9E00655539 /* circleCard.m */; };
+		E160E9941A74DF9E00655539 /* CircleTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E160E9911A74DF9E00655539 /* CircleTableView.m */; };
+		E160E9971A74E11600655539 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E160E9961A74E11600655539 /* NextViewController.m */; };
+		E160E9991A74E31700655539 /* Home_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E160E9981A74E31700655539 /* Home_Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,15 @@
 		E160E97B1A74DF2600655539 /* CardsViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E160E9801A74DF2600655539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E160E9811A74DF2600655539 /* CardsViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardsViewTests.m; sourceTree = "<group>"; };
+		E160E98C1A74DF9E00655539 /* CardData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardData.h; sourceTree = "<group>"; };
+		E160E98D1A74DF9E00655539 /* CardData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardData.m; sourceTree = "<group>"; };
+		E160E98E1A74DF9E00655539 /* circleCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = circleCard.h; sourceTree = "<group>"; };
+		E160E98F1A74DF9E00655539 /* circleCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = circleCard.m; sourceTree = "<group>"; };
+		E160E9901A74DF9E00655539 /* CircleTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTableView.h; sourceTree = "<group>"; };
+		E160E9911A74DF9E00655539 /* CircleTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTableView.m; sourceTree = "<group>"; };
+		E160E9951A74E11600655539 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		E160E9961A74E11600655539 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		E160E9981A74E31700655539 /* Home_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home_Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +95,14 @@
 		E160E9641A74DF2400655539 /* CardsView */ = {
 			isa = PBXGroup;
 			children = (
+				E160E98B1A74DF8E00655539 /* CardsView */,
 				E160E9691A74DF2500655539 /* AppDelegate.h */,
 				E160E96A1A74DF2500655539 /* AppDelegate.m */,
 				E160E96C1A74DF2500655539 /* ViewController.h */,
 				E160E96D1A74DF2500655539 /* ViewController.m */,
+				E160E9951A74E11600655539 /* NextViewController.h */,
+				E160E9961A74E11600655539 /* NextViewController.m */,
+				E160E9981A74E31700655539 /* Home_Icon.png */,
 				E160E96F1A74DF2500655539 /* Main.storyboard */,
 				E160E9721A74DF2500655539 /* Images.xcassets */,
 				E160E9741A74DF2500655539 /* LaunchScreen.xib */,
@@ -117,6 +135,19 @@
 				E160E9801A74DF2600655539 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E160E98B1A74DF8E00655539 /* CardsView */ = {
+			isa = PBXGroup;
+			children = (
+				E160E98C1A74DF9E00655539 /* CardData.h */,
+				E160E98D1A74DF9E00655539 /* CardData.m */,
+				E160E98E1A74DF9E00655539 /* circleCard.h */,
+				E160E98F1A74DF9E00655539 /* circleCard.m */,
+				E160E9901A74DF9E00655539 /* CircleTableView.h */,
+				E160E9911A74DF9E00655539 /* CircleTableView.m */,
+			);
+			name = CardsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E160E9711A74DF2500655539 /* Main.storyboard in Resources */,
+				E160E9991A74E31700655539 /* Home_Icon.png in Resources */,
 				E160E9761A74DF2500655539 /* LaunchScreen.xib in Resources */,
 				E160E9731A74DF2500655539 /* Images.xcassets in Resources */,
 			);
@@ -220,7 +252,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E160E96E1A74DF2500655539 /* ViewController.m in Sources */,
+				E160E9921A74DF9E00655539 /* CardData.m in Sources */,
 				E160E96B1A74DF2500655539 /* AppDelegate.m in Sources */,
+				E160E9941A74DF9E00655539 /* CircleTableView.m in Sources */,
+				E160E9971A74E11600655539 /* NextViewController.m in Sources */,
+				E160E9931A74DF9E00655539 /* circleCard.m in Sources */,
 				E160E9681A74DF2500655539 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
