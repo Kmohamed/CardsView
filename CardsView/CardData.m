@@ -11,8 +11,28 @@
 @implementation CardData
 
 - (void)addnewData {
-    
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (instancetype)initWithName:(NSString *)name andImage:(UIImage *)image {
+    self = [super init];
+    if (self) {
+        _cardName = name;
+        _cardImage = image;
+        _isSelected = NO;
+    }
+    return self;
+}
+
+- (void)resetSelection {
+    self.isSelected = NO;
+}
+
+- (NSDictionary *)toDictionary {
+    return @{
+        @"cardName": self.cardName ?: @"",
+        @"isSelected": @(self.isSelected)
+    };
 }
 
 @end

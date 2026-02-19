@@ -14,4 +14,8 @@
 @property (nonatomic,strong) UIImage *cardImage;
 @property (nonatomic) BOOL isSelected;
 
+- (instancetype)initWithName:(NSString *)name andImage:(UIImage *)image;
+- (void)resetSelection;
+- (NSDictionary *)toDictionary;
+
 @end

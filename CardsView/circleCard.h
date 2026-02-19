@@ -21,4 +21,9 @@
 @property (nonatomic) BOOL isLeft;
 
 -(id)initWithStartAngle:(CGFloat)startAngle andWidth:(CGFloat)width andLargeRaduis:(CGFloat)largeRaduis andSmallRaduis:(CGFloat)smallRaduis andCardName:(NSString*)cardName andCardIndex:(NSInteger)index;
+
+- (CGFloat)centerAngle;
+- (BOOL)containsAngle:(CGFloat)angle;
+- (CGFloat)endAngle;
+
 @end
