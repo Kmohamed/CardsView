@@ -23,6 +23,18 @@
         self.cardIndex=index;
     }
     return self;
-
 }
+
+- (CGFloat)centerAngle {
+    return self.start_angle + self.width_Angle / 2.0;
+}
+
+- (CGFloat)endAngle {
+    return self.start_angle + self.width_Angle;
+}
+
+- (BOOL)containsAngle:(CGFloat)angle {
+    return angle >= self.start_angle && angle <= [self endAngle];
+}
+
 @end
